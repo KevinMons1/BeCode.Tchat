@@ -1,0 +1,61 @@
+.connexion-wrapper {
+    @include myFlex(center, center);
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 15px 0;
+    background-color: $ColorWhite;
+
+    header {
+        @include myFlex(center, center);
+        width: 100%;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    main {
+        @include myFlex(center, center);
+        flex-direction: column;
+        width: 100%;
+
+        h1 {
+            margin: 15px;
+            font-size: 5rem;
+        }
+
+        form {
+            @include myFlex(center, center);
+            flex-direction: column;
+
+            input, button {
+                margin: 15px 0;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 2rem;
+            }
+
+            button {
+                width: 100%;
+                background-color: $ColorYellow;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: $ColorBlack
+        }
+    }
+
+    .input-error {
+        border: 1px solid $ColorRed;
+    }
+
+    .alert {
+        color: $ColorRed;
+        font-size: 2rem;
+    }
+}

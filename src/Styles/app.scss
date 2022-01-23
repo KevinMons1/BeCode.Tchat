@@ -1,0 +1,46 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Modules
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+// Components
+@import "../Components/Header/header.scss";
+@import "../Components/Nav/nav.scss";
+
+// Pages
+@import "../Pages/Connexion/connexion.scss";
+@import "../Pages/Home/home.scss";
+@import "../Pages/Users/users.scss";
+@import "../Pages/Account/account.scss";
+
+// Globale
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+}
+
+h1, h2, h3, p, span, input, button, li, a {
+    font-family: $FontRobot;
+}
+
+.page-wrapper {
+    @include myFlex(space-between, center);
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: $ColorWhite; 
+
+    main {
+        width: 100%;
+        height: 75vh;
+        padding: 30px 15px;
+        background-color: $ColorWhite;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        z-index: 2;
+    }
+}

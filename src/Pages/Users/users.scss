@@ -1,0 +1,19 @@
+.users-card {
+    @include myFlex(space-between, center);
+    margin: 15px;
+    list-style: none;
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.8rem;
+        border-radius: 5px;
+        background: none;
+        border: none;
+        background-color: $ColorBlack;
+        color: #fff;
+    }
+}

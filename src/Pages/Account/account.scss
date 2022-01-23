@@ -1,0 +1,26 @@
+.account-wrapper {
+   main {
+       @include myFlex(flex-start, center);
+       flex-direction: column;
+
+       h2 {
+           font-size: 2.5rem;
+           font-weight: bold;
+       }
+
+       p {
+           font-size: 2rem;
+           margin: 15px 0;
+           text-align: center;
+       }
+
+        .account-btn {
+            padding: 10px;
+            background-color: $ColorYellow;
+            font-size: 2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+   }
+}

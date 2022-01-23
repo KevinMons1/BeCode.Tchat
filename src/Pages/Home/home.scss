@@ -1,0 +1,73 @@
+.home-wrapper {
+    main {
+
+        .home-top {
+            h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .home-search {
+                background-color: $ColorGrey;
+                margin: 15px 0;
+                border-radius: 5px;
+                padding: 0 10px;
+
+                input {
+                    padding: 15px;
+                    border: none;
+                    background: none;
+                    font-size: 2rem;
+                }
+
+                svg {
+                    font-size: 2rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .home-new-friend {
+                @include myFlex(center, center);
+                width: 100%;
+
+                a {
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: $ColorYellow;
+                    color: $ColorBlack;
+                    font-size: 2rem;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        section {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            ul {
+                overflow-y: auto;
+                height: 50vh;
+
+                .user-card {
+                    margin: 15px;
+                    list-style: none;
+    
+                    h4 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        margin: 5px 0 0 5px;
+                        font-size: 1.8rem;
+                        color: $ColorGrey
+                    }
+                }
+            }
+        }
+    }
+}

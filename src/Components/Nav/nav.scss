@@ -1,0 +1,43 @@
+nav {
+    @include myFlex(center, center);
+    width: 100%;
+    height: 10vh;
+    background-color: $ColorWhite;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    -webkit-box-shadow: 0px -4px 50px 1px rgba(0,0,0,0.3); 
+    box-shadow: 0px -4px 50px 1px rgba(0,0,0,0.3);
+    z-index: 3;
+
+    ul {
+        @include myFlex(space-around, center);
+        width: 100%;
+
+        li {
+            @include myFlex(center, center);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            list-style: none;
+            opacity: 0.5;
+
+            a {
+                text-decoration: none;
+
+                .nav-icon {
+                    font-size: 3rem;
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+
+        .nav-active {
+            background: $ColorBlack;
+            opacity: 1;
+
+            .nav-icon {
+                color: #fff;
+            }
+        }
+    }
+}
