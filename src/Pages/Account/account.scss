@@ -21,6 +21,68 @@
             font-weight: bold;
             border: none;
             border-radius: 5px;
+            font-weight: bold
         }
    }
+}
+
+.modify-profile {
+    .modify-profile-opacity {
+        @include myAbsolute();
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 4;
+    }
+
+    .modify-profile-content {
+        @include myAbsolute();
+        @include myFlex(center, center);
+        flex-direction: column;
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: $ColorWhite;
+        z-index: 5;
+
+        .modify-profile-close {
+            @include myAbsolute();
+            top: 15px;
+            left: calc(100% - 15px);
+
+            svg {
+                font-size: 2rem;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            svg:hover {
+                opacity: 0.6;
+            }
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+
+        input {
+            border: 1px solid $ColorBlack;
+            background: none;
+        }
+
+        button {
+            background-color: $ColorYellow;
+            border: none;
+            font-weight: bold;
+        }
+    }
 }

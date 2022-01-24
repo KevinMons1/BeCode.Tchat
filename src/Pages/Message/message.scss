@@ -1,0 +1,108 @@
+.message-wrapper {
+    @include myFlex(space-between, center);
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+
+    header {
+        @include myFlex(flex-start, center);
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $ColorGrey;
+
+        nav {
+            svg {
+                font-size: 2rem;
+                color: black;
+            }
+        }
+
+        .header-message {
+            margin-left: 15px;
+
+            h1 {
+                font-size: 2rem;
+            }
+    
+            a {
+                font-size: 1.8rem;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        
+        .message-content {
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-bottom: 15px;
+
+            .message-left {
+                @include myFlex(flex-start, center);
+
+                p {
+                    background-color: $ColorGrey;
+                }
+            }
+
+            .message-right {
+                @include myFlex(flex-end, center);
+
+                p {
+                    background-color: $ColorBlack;
+                    color: #fff;
+                }
+            }
+
+            .message-box {
+                width: 100%;
+                margin: 15px 0;
+
+                .message {
+                    max-width: 75%;
+                    
+                    p {
+                        padding: 15px;
+                        border-radius: 5px;
+                        font-size: 2rem;
+                    }
+
+                    small {
+                        font-size: 1.5rem;
+                        color: $ColorGrey;
+                    }
+                }
+            }
+        }
+
+        .message-send {
+            @include myFlex(space-around, center);
+
+            input {
+                height: 50px;
+                width: 80%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid $ColorGrey;
+                font-size: 2rem;
+            }
+
+            button {
+                height: 50px;
+                width: 50px;
+                background: $ColorYellow;
+                border: none;
+                border-radius: 5px;
+            }
+
+            svg {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -14,6 +14,7 @@
 @import "../Pages/Home/home.scss";
 @import "../Pages/Users/users.scss";
 @import "../Pages/Account/account.scss";
+@import "../Pages/Message/message.scss";
 
 // Globale
 *, ::after, ::before {
@@ -23,7 +24,7 @@
     font-size: 62.5%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
 }
 
-h1, h2, h3, p, span, input, button, li, a {
+h1, h2, h3, h4, p, span, input, button, li, a {
     font-family: $FontRobot;
 }
 
